@@ -4,21 +4,21 @@ const niveis = [
       palavras: ["AMOR", "BEIJO", "SEXO"],
       letrasExtras: "AEIOUBCDFGH",
       tamanho: 10,
-      tempo: 90
+      tempo: 50
     },
     {
       nome: "Médio",
       palavras: ["CAMISINHA", "RESPEITO", "DESEJO"],
       letrasExtras: "ZXCVBNMLKJHGFDS",
       tamanho: 12,
-      tempo: 120
+      tempo: 90
     },
     {
       nome: "Difícil",
       palavras: ["CONSENTIMENTO", "CONTRACEPTIVO", "PREVENÇÃO"],
       letrasExtras: "QWERTYUIOPASDFGHJKL",
       tamanho: 14,
-      tempo: 180
+      tempo: 100
     }
   ];
   
