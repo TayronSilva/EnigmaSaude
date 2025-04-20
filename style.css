@@ -1,0 +1,124 @@
+:root {
+    --verde-principal: #2E7D32;
+    --verde-claro: #81C784;
+    --branco: #FFFFFF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--verde-claro);
+    margin: 0;
+    padding: 20px;
+    transition: 0.3s;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.tela {
+    display: none;
+    max-width: 1000px; /* aumentei para comportar grids maiores */
+    width: 95vw;       /* ocupa quase toda a largura da tela */
+    max-height: 90vh;  /* limita a altura para caber na tela */
+    margin: 0 auto;
+    background-color: var(--branco);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-y: auto;  /* permite scroll vertical se conteúdo for maior */
+    box-sizing: border-box;
+  }
+  
+
+.visivel {
+    display: block;
+}
+
+button {
+    background-color: var(--verde-principal);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+button:hover {
+    background-color: #1B5E20;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.celula {
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--verde-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.celula:active {
+    background-color: var(--verde-claro);
+}
+
+.selecionada {
+    background-color: var(--verde-claro);
+}
+
+#info-jogo {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Responsividade */
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .tela {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .celula {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 1em;
+        max-width: 100%;
+    }
+
+    #info-jogo {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1em;
+    }
+}

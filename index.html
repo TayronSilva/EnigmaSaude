@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Semana de Enfermagem - Caça Palavras</title>
+  <meta name="theme-color" content="#2E7D32" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- SweetAlert2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <!-- Tela Inicial -->
+  <div id="tela-inicial" class="tela visivel">
+    <h1>Semana de Enfermagem 2025</h1>
+    <p>Bem-vindo ao Caça Palavras da Enfermagem! Encontre todas as palavras no menor tempo possível.</p>
+    <button id="btn-iniciar">Iniciar Jogo</button>
+  </div>
+
+  <!-- Tela do Jogo -->
+  <div id="tela-jogo" class="tela">
+    <div id="info-jogo">
+      <div>Nível: <span id="nivel-atual">1</span></div>
+      <div>Tempo: <span id="tempo">60</span>s</div>
+    </div>
+
+    <div id="palavras"></div>
+    <div id="grid" class="grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

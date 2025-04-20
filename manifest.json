@@ -1,0 +1,15 @@
+{
+    "name": "Caça Palavras Enfermagem",
+    "short_name": "CaçaPalavras",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#2E7D32",
+    "theme_color": "#2E7D32",
+    "icons": [
+        {
+            "src": "icone.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
