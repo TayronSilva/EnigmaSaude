@@ -43,4 +43,4 @@ Este projeto visa desafiar os conhecimentos dos jogadores com palavras relaciona
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/enigma-saude.git
+   git clone https://github.com/TayronSilva/enigma-saude.git
